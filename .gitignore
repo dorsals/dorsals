@@ -141,9 +141,12 @@ auth.json
 /EXP
 #/database
 /config
-/img/no
 
 /.idea
 /.vscode
 
+/package.json
+/package-lock.json
+/tailwind.config.js
+/img/no
 /bleh.html

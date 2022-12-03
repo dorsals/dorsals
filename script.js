@@ -5,17 +5,6 @@ $(document).ready( function() {
 
         var resultat = document.getElementById('result');
 
-        /*
-        Grocs: 300-350
-        Verd: 200-250
-        Blau: 100-150
-        Vermell: 1-50
-        */
-        var background = ['bg-sticker-red', 'bg-sticker-blue', 'bg-sticker-green', 'bg-sticker-yellow'];
-        var text = ['text-sticker-red', 'text-sticker-blue', 'text-sticker-green', 'text-sticker-yellow'];
-        var values = [50, 150, 250, 350];
-
-
         var sticker = {
             "poble": poble.value,
             "date": date.value,

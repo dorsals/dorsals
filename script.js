@@ -64,8 +64,11 @@ $(document).ready( function() {
 
         resultat.append(paintColorZone(sticker));
 
-        $("#main").empty();
-        $("#main").removeClass( "m-3" );
+        $("#main").remove();
+        //$("#main").removeClass( "m-3 height-no-footer");
+
+        
+        $("#footer").remove();
          
     });
 

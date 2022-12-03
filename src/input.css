@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*https://css-tricks.com/useful-nth-child-recipies/*/
+/*.sticker:nth-child(6n){
+    color: green;
+    content: '..';   
+}*/
+
+.sixth{
+    @apply break-before-page;
+}

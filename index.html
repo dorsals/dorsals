@@ -1,13 +1,68 @@
-<html lang="en">
+<html lang="es-ES">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="src/output.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Dorsals</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maiores voluptatem nulla id animi nihil consequatur, voluptatibus delectus ad quasi reprehenderit ex odio tempore, tempora, impedit fuga sed cupiditate dolorem.</p>
+<body class="font-sans">
+    <div id="eem" class="m-3 prose prose-stone">
+        
+        <h3>Dorsals</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maiores voluptatem nulla id animi nihil consequatur, voluptatibus delectus ad quasi reprehenderit ex odio tempore, tempora, impedit fuga sed cupiditate dolorem.</p>
+
+        <div class="flex flex-row">
+            <label class="basis-1/2 mr-2">
+                <span class="block text-sm font-medium text-slate-700">Localitat</span>
+                <input type="text" id="localitat" placeholder="Localitat"
+                    class="mt-0
+                            block
+                            w-full
+                            px-0.5
+                            border-0 border-b-2 border-gray-200
+                            focus:ring-0 focus:border-black placeholder:text-sm"  />
+            </label>
+            
+            <label class="basis-1/2">
+                <span class="block text-sm font-medium text-slate-700">Any</span>
+                <input type="number" id="anyy" value="2022"
+                    class="mt-0
+                            block
+                            w-full
+                            px-0.5
+                            border-0 border-b-2 border-gray-200
+                            focus:ring-0 focus:border-black placeholder:text-sm"  />
+            </label>
+
+        </div>
+        <button id="preview">Previsualitzar</button>
+        <!--<button id="generate">Generar</button>-->
+
+        <button id="download-button">Download as PDF</button>
+    </div>
+    <!-- the result of the search will be rendered inside this div -->
+    <!--<div class="grid grid-cols-2 gap-0 text-center">
+        <div class="bg-sticker-yellow font-bold basis-1/2">
+            <div class="text-4xl mt-8">LA POBLA DE SEGUR</div>
+            <div class="text-4xl">2022</div>
+            <div class="text-9xl mt-2">300</div>
+            <img class="mt-6" src="img/banner.jpg">
+        </div>
+    </div>-->
+    <!--<div id="result" class="grid grid-cols-2 gap-0 text-center"></div>-->
+    <div id="result" class="text-center block"></div>
+    
+
+
+    
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <!--BL-->
+    <script type='text/javascript' src='script.js'></script>
 </body>
 </html>
